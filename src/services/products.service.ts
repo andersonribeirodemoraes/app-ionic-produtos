@@ -26,4 +26,8 @@ export class ProductsService {
   remove(item) {
     this.products.splice(this.products.indexOf(item), 1);
   }
+
+  add(item){
+    this.products.push(item);
+  }
 }

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ProductsService } from '../../services/products.service';
+
 import { ProductsDetailPage } from '../products-detail/products-detail';
+import { ProductsAddPage } from '../products-add/products-add';
+
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'page-list',
@@ -20,5 +23,9 @@ export class ProductsPage {
 
   remove(product){
     this.productsService.remove(product);
+  }
+
+  goToPage(){
+    this.navCtrl.push(ProductsAddPage)
   }
 }

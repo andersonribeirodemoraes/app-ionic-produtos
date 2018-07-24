@@ -10,17 +10,18 @@ import { MyApp } from './app.component';
 //Pages
 import { HomePage } from '../pages/home/home';
 import { ProductsPage } from '../pages/products/products';
+import { ProductsAddPage } from '../pages/products-add/products-add';
 import { ProductsDetailPage } from '../pages/products-detail/products-detail';
 
 //Services
 import { ProductsService } from '../services/products.service';
-
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProductsPage,
+    ProductsAddPage,
     ProductsDetailPage
   ],
   imports: [
@@ -32,6 +33,7 @@ import { ProductsService } from '../services/products.service';
     MyApp,
     HomePage,
     ProductsPage,
+    ProductsAddPage,
     ProductsDetailPage
   ],
   providers: [
