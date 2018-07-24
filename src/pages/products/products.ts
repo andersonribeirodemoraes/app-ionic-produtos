@@ -17,4 +17,8 @@ export class ProductsPage {
   viewDetail(id){
     this.navCtrl.push(ProductsDetailPage, {product: this.productsService.getItem(id)});
   }
+
+  remove(product){
+    this.productsService.remove(product);
+  }
 }

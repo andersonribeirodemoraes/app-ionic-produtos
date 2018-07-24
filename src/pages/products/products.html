@@ -8,12 +8,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let product of products" (click)="viewDetail(product.id)">      
+  <ion-list *ngFor="let product of products">
+    <div ion-item (click)="viewDetail(product.id)">      
       {{product.name}}
-      <div class="item-note" item-end>
+      <div class="item-note">
         {{product.price}}
       </div>
-    </button>
+      <ion-icon name="remove-circle" item-end (click)="remove(product)"></ion-icon>
+    </div>
   </ion-list>  
 </ion-content>
