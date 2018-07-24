@@ -9,7 +9,7 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let product of products">      
+    <button ion-item *ngFor="let product of products" (click)="viewDetail(product.id)">      
       {{product.name}}
       <div class="item-note" item-end>
         {{product.price}}

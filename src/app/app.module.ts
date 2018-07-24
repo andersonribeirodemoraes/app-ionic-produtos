@@ -6,15 +6,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
+
+//Pages
 import { HomePage } from '../pages/home/home';
 import { ProductsPage } from '../pages/products/products';
+import { ProductsDetailPage } from '../pages/products-detail/products-detail';
+
+//Services
 import { ProductsService } from '../services/products.service';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ProductsPage
+    ProductsPage,
+    ProductsDetailPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,8 @@ import { ProductsService } from '../services/products.service';
   entryComponents: [
     MyApp,
     HomePage,
-    ProductsPage
+    ProductsPage,
+    ProductsDetailPage
   ],
   providers: [
     StatusBar,
